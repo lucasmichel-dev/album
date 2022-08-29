@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    database-platform: com.album.sticker.config.SQLiteDialect
+    hibernate:
+      ddl-auto: update
+  datasource:
+    initialization-mode: always
+    url: jdbc:sqlite:db/album.db
+    driver-class-name: org.sqlite.JDBC
+    username: admin
+    password: admin
